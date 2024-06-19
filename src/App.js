@@ -3,7 +3,11 @@ import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import ContactPage from './ContactPage';
 import Menu from './Menu';
-
+//rutas
+//* /#/
+//* /#/blog
+//* /#/profile
+//* /#/lalala -> not found
 
 function App() {
   return (
@@ -16,10 +20,6 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<h1>Not found</h1>} /> // toma las demas rutas que no enten contenidas en Routes
         </Routes>
-
-
-
-
       </HashRouter>
     </>
   )
