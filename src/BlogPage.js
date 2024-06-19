@@ -1,11 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { blogdata } from './blogdata';
 
 const ContactPage = () => {
     return (
         <>
-            <h1>BlogPage</h1>
+            <h1>Blog</h1>
+            {/* Esta etiqueta es donde aparecerá renderizado el componente 
+			hijo */}
+            <Outlet/>
             {blogdata.map(post => (
                 <BlogLink key={post.slug} post={post}/>
             ))}

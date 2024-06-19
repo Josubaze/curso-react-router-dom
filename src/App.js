@@ -18,8 +18,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:slug" element={<BlogPost />} /> {/* ruta dinamica */}
+          <Route path="/blog" element={<BlogPage />} >
+            <Route path=":slug" element={<BlogPost />} /> {/* ruta dinamica */}
+          </Route>
           <Route path="*" element={<h1>Not found</h1>} /> {/*toma las demas rutas que no enten contenidas en Routes*/}
         </Routes>
       </HashRouter>
