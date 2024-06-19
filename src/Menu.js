@@ -76,8 +76,8 @@ routes.push({
     text: "About"
 })
 routes.push({
-    to: "/contact",
-    text: "Contact"
+    to: "/blog",
+    text: "Blog"
 })
 
 export default Menu;
