@@ -5,49 +5,6 @@ const Menu = () => {
     return (
         <nav>
             <ul>
-                {/* <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/contact">Contact</Link></li> */}
-
-                {/* NavLink: Este funciona exactamente igual que Link, incluso la propiedad 
-                to="/" también se usa en este componente, pero nos permite cierta flexibilidad, 
-                por ejemplo, cuando queramos darle una clase a nuestros componentes o estilos
-                manuales nos permite que en nuestras propiedades className={} o style={} nos 
-                permite devolver una función. */}
-
-                {/* <li>
-                    <NavLink 
-                    to="/"
-                    style={({ isActive }) => ({
-                        color: isActive ? "red" : "blue"
-                    })}
-                    >
-                        Home
-                    </NavLink>
-                </li>
-
-                <li>
-                    <NavLink 
-                    to="/About"
-                    style={({ isActive }) => ({
-                        color: isActive ? "red" : "blue"
-                    })}
-                    >
-                        About
-                    </NavLink>
-                </li>
-
-                <li>
-                    <NavLink 
-                    to="/Contact"
-                    style={({ isActive }) => ({
-                        color: isActive ? "red" : "blue"
-                    })}
-                    >
-                        Contact
-                    </NavLink>
-                </li> */}
-
                 {routes.map(route => (
                     <li key={route.to}>
                         <NavLink 
@@ -60,7 +17,6 @@ const Menu = () => {
                         </NavLink>
                     </li>
                 ))}
-        
             </ul>
         </nav>
     );
@@ -78,6 +34,14 @@ routes.push({
 routes.push({
     to: "/blog",
     text: "Blog"
+})
+routes.push({
+    to: "/login",
+    text: "Login"
+})
+routes.push({
+    to: "/logout",
+    text: "Logout"
 })
 
 export default Menu;
