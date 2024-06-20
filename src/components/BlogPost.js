@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { blogdata } from './blogdata';
+import { blogdata } from '../data/blogdata';
 
 const BlogPost = () => {
     /* Para cargar la información dinámicamente en la página debemos 
